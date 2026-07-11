@@ -56,13 +56,16 @@
   .note{text-align:center;color:var(--grey);font-size:.9rem;margin-top:30px}
 
   footer{background:var(--ink);color:#fff;padding:40px 0 26px;margin-top:20px}
-  .quali{display:flex;align-items:center;gap:22px;flex-wrap:wrap;padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,.12)}
+  .quali{display:flex;align-items:flex-start;gap:22px;flex-wrap:wrap;padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,.12)}
   .quali-logo{background:#fff;border-radius:8px;padding:14px 18px;min-width:160px;min-height:78px;display:grid;place-items:center}
   .quali-logo img{max-height:70px;display:none}
   .quali-ph{color:var(--prune-d);font-weight:700;font-size:.8rem;text-align:center;line-height:1.35}
   .quali-ph small{color:var(--grey);font-weight:500;display:block;margin-top:3px}
   .quali-mention{color:rgba(255,255,255,.78);font-size:.82rem;max-width:54ch}
   .quali-mention strong{color:#fff}
+  .quali-txt{max-width:52ch}
+  .quali-dl{display:block;margin-top:10px;color:#fff;font-weight:700;font-size:.85rem;border-bottom:1px dashed rgba(255,255,255,.5)}
+  .quali-dl:hover{border-color:#fff}
   .foot-bot{padding-top:18px;font-size:.8rem;color:rgba(255,255,255,.55);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
   @media(max-width:820px){.progs{grid-template-columns:1fr}.top h1{font-size:2.2rem}}
@@ -124,7 +127,7 @@
         <img src="qualiopi-logo.png" alt="Qualiopi – processus certifié – République Française" onload="this.style.display='block';this.nextElementSibling.style.display='none'">
         <div class="quali-ph">Logo officiel Qualiopi<small>déposer « qualiopi-logo.png »</small></div>
       </div>
-      <p class="quali-mention">La certification qualité a été délivrée au titre de la catégorie d'action suivante : <strong>actions de formation</strong>.</p>
+      <div class="quali-txt"><p class="quali-mention">La certification qualité a été délivrée au titre de la catégorie d'action suivante : <strong>actions de formation</strong>.</p><a class="quali-dl" href="qualiopi-certificat.pdf" target="_blank" rel="noopener">↓ Télécharger notre certificat Qualiopi (PDF)</a><a class="quali-dl" href="accessibilite-handicap.pdf" target="_blank" rel="noopener">♿ Formation &amp; accessibilité des apprenants en situation de handicap (PDF)</a></div>
     </div>
     <div class="foot-bot"><span>© 2026 mediaformation.fr</span><span>Retour à l'<a href="index.html" style="color:rgba(255,255,255,.75)">accueil</a></span></div>
   </div>
