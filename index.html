@@ -168,13 +168,19 @@
   a.lang,a.card{color:inherit;text-decoration:none}
   .lang{cursor:pointer}.lang:hover{background:rgba(255,255,255,.16)}
   a.card{display:block}
-  .quali{display:flex;align-items:center;gap:22px;flex-wrap:wrap;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.12);margin-bottom:6px}
+  .hero .trust a.tqual{color:#fff;border-bottom:1px dashed rgba(255,255,255,.55)}
+  .hero .trust a.tqual:hover{border-color:#fff}
+  .quali{display:flex;align-items:flex-start;gap:22px;flex-wrap:wrap;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.12);margin-bottom:6px}
   .quali-logo{background:#fff;border-radius:8px;padding:14px 18px;min-width:160px;min-height:78px;display:grid;place-items:center}
   .quali-logo img{max-height:70px;display:none}
   .quali-ph{color:var(--prune-d);font-weight:700;font-size:.8rem;text-align:center;line-height:1.35}
   .quali-ph small{color:var(--grey);font-weight:500;display:block;margin-top:3px}
-  .quali-mention{color:rgba(255,255,255,.78);font-size:.82rem;max-width:54ch}
+  .quali-txt{max-width:56ch}
+  .quali-mention{color:rgba(255,255,255,.78);font-size:.82rem}
   .quali-mention strong{color:#fff}
+  .quali-dl{display:block;margin-top:10px;color:#fff;font-weight:700;font-size:.85rem}
+  .quali-dl span{border-bottom:1px dashed rgba(255,255,255,.5)}
+  .quali-dl:hover span{border-color:#fff}
 </style>
 </head>
 <body>
@@ -241,7 +247,7 @@
         </div>
         <div class="trust">
           <span><b>Niveaux</b> CECRL</span><span><b>Formateurs</b> experts</span>
-          <span><b>Présentiel</b> & distanciel</span><span><b>Certifié</b> Qualiopi</span>
+          <span><b>Présentiel</b> & distanciel</span><a class="tqual" href="qualiopi-certificat.pdf" target="_blank" rel="noopener"><b>Certifié</b> Qualiopi ↓</a>
         </div>
       </div>
       <div class="lang-card">
@@ -259,7 +265,7 @@
       <p><strong>mediaformation</strong> est un organisme de formation professionnelle spécialisé dans les langues étrangères et la communication professionnelle. Nous accompagnons particuliers et entreprises, du premier contact jusqu'à la certification.</p>
       <p>Présents dans plusieurs villes de France, du nord au sud et d'est en ouest, nous mettons à votre service une équipe de formateurs expérimentés, issus d'horizons variés.</p>
       <div class="stat-row">
-        <div class="stat"><b>12</b><span>villes en France</span></div>
+        <div class="stat"><b>15</b><span>sites en France</span></div>
         <div class="stat"><b>8</b><span>langues enseignées</span></div>
         <div class="stat"><b>CECRL</b><span>niveaux certifiés</span></div>
       </div>
@@ -274,7 +280,7 @@
       <div class="card"><div class="ic">🗣️</div><h3>Langues étrangères</h3><p>Huit langues, du débutant au perfectionnement, en cours individuels ou petits groupes.</p></div>
       <div class="card"><div class="ic">💼</div><h3>Communication pro</h3><p>Réunion, présentation, négociation, écrits professionnels : des ateliers ciblés et concrets.</p></div>
       <div class="card"><div class="ic">🎯</div><h3>Coaching</h3><p>Un accompagnement individuel, format court et intensif, sur un objectif précis.</p></div>
-      <div class="card"><div class="ic">🎓</div><h3>Certifications & CPF</h3><p>Des parcours qui préparent aux certifications reconnues et valorisent vos acquis.</p></div>
+      <a class="card" href="certifications.html"><div class="ic">🎓</div><h3>Certifications & CPF</h3><p>Des parcours qui préparent aux certifications reconnues et valorisent vos acquis.</p></a>
     </div>
     <div class="formats">
       <h3>Formats & modalités</h3>
@@ -310,7 +316,7 @@
   <div class="wrap">
     <div class="sec-head"><p class="eyebrow">Où nous trouver</p><h2>Cliquez sur votre ville</h2></div>
     <div class="find-grid">
-      <div class="map-wrap"><svg viewBox="-70 -12 720 585" xmlns="http://www.w3.org/2000/svg" class="fr-map" font-family="'Mulish','Inter',system-ui,sans-serif" role="group" aria-label="Carte des villes">
+      <div class="map-wrap"><svg viewBox="-16 -14 552 585" xmlns="http://www.w3.org/2000/svg" class="fr-map" role="group" aria-label="Carte des sites de formation">
 <defs><filter id="sh" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#721446" flood-opacity="0.18"/></filter></defs>
 <g fill="#F3E1EC" stroke="#F3E1EC" stroke-width="1.4" stroke-linejoin="round" filter="url(#sh)">
 <path d="M300.1,118.9L301.7,117.3L303.3,118.2L304.6,119.6L306.4,119.9L307.7,119.1L307.8,118.3L309.9,118.6L310.3,119.4L311.8,119.0L312.1,118.5L314.9,119.1L316.2,118.2L317.7,118.5L318.6,116.7L319.9,117.3L321.1,117.3L322.2,117.7L321.8,118.7L322.9,119.9L322.3,122.4L324.7,124.0L325.6,124.9L326.2,126.8L327.6,126.2L327.9,127.7L328.6,128.5L330.0,127.7L330.6,129.6L330.5,130.4L331.4,131.0L333.3,131.4L333.6,132.3L334.5,131.6L334.5,133.1L332.5,133.9L332.9,135.3L331.6,135.5L331.1,136.8L332.4,137.0L333.0,138.1L333.9,138.0L333.7,139.7L333.9,140.9L332.8,142.2L333.6,142.8L335.8,143.3L335.8,143.9L337.3,144.6L335.3,145.5L335.0,146.3L333.8,147.4L334.3,148.9L333.5,149.6L332.2,149.5L331.5,149.8L332.6,151.5L330.8,152.5L331.5,154.0L330.9,155.6L332.1,156.2L331.8,157.5L330.6,157.0L330.0,157.3L329.9,158.5L327.6,158.5L326.7,158.2L325.7,158.9L324.8,158.6L323.6,159.0L321.2,158.5L319.7,159.3L317.8,159.2L317.3,160.3L317.5,160.9L316.5,162.1L317.5,164.1L316.1,167.8L314.9,167.9L314.7,168.5L313.3,169.4L313.4,170.2L310.8,170.6L309.0,172.1L308.1,171.5L308.1,170.0L305.9,170.4L306.4,171.2L305.1,171.7L304.5,172.4L302.9,172.5L302.0,171.6L300.5,172.0L299.3,171.5L298.0,171.5L297.4,172.3L296.2,172.3L295.1,171.7L295.9,170.2L296.8,170.6L297.0,169.2L297.5,168.5L296.9,166.7L295.4,165.1L294.8,165.4L293.7,164.8L293.6,162.7L292.8,161.4L291.3,162.0L290.0,160.7L289.4,160.8L288.7,162.1L286.5,161.7L286.0,160.5L285.1,160.1L284.3,161.9L283.3,162.3L280.5,162.9L279.4,162.8L279.0,163.3L277.1,163.3L276.4,163.3L275.8,162.1L276.6,161.5L276.2,160.4L276.8,159.1L276.3,157.6L276.4,157.0L274.5,156.3L275.0,155.6L274.3,153.7L273.7,154.7L272.4,154.7L271.4,154.2L270.9,153.2L269.8,152.9L268.7,150.8L268.7,149.8L269.1,148.4L268.3,147.5L266.1,147.0L265.9,146.6L266.4,145.0L264.5,145.0L263.9,143.6L262.0,142.3L262.4,140.7L261.1,140.0L262.9,137.5L261.4,136.0L261.0,135.1L261.6,133.7L261.1,132.1L261.2,131.5L259.9,130.5L260.4,129.9L259.6,128.6L259.6,127.7L258.4,127.4L258.1,126.6L258.0,124.5L257.2,124.5L257.2,122.4L256.4,121.9L256.0,120.8L256.6,119.8L257.5,120.4L259.5,119.3L260.3,119.4L262.0,118.6L262.3,119.0L263.3,116.9L264.1,116.0L264.4,114.7L264.8,111.5L265.9,110.3L267.1,110.9L267.4,113.2L267.9,113.5L269.5,112.9L271.4,113.8L272.6,113.7L272.9,114.2L274.7,113.6L275.8,113.6L276.3,113.0L277.4,113.5L280.2,111.6L281.1,112.7L282.4,112.6L284.3,113.6L285.8,113.2L287.1,114.8L288.4,114.4L289.3,112.9L290.7,114.3L292.4,115.0L293.2,114.8L295.5,115.7L296.7,116.7L296.2,117.4L298.8,117.8L300.1,118.9Z"/>
@@ -344,81 +350,95 @@
 <path d="M440.8,458.6L441.1,459.7L439.4,460.6L437.7,459.6L438.3,459.2L439.2,459.6L440.8,458.6Z"/>
 <path d="M388.8,383.2L389.3,382.7L389.8,380.8L391.5,380.0L392.5,379.9L393.4,380.9L393.5,381.6L394.8,382.3L394.9,383.2L393.9,383.3L393.8,384.2L392.1,387.0L389.9,386.3L388.6,386.6L388.3,385.4L388.9,384.7L387.9,384.0L388.8,383.2Z"/>
 </g>
-<g class="city" data-city="Annecy" tabindex="0" role="button" aria-label="Annecy">
-<circle class="hit" cx="436.4" cy="297.2" r="15" fill="transparent"/>
-<circle class="halo" cx="436.4" cy="297.2" r="9" fill="#D488B4" opacity="0.35"/>
-<circle class="dot" cx="436.4" cy="297.2" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
-<text class="lbl" x="447" y="294" text-anchor="start" font-size="16" font-weight="600" fill="#26141D">Annecy</text>
-</g>
-<g class="city" data-city="Belfort" tabindex="0" role="button" aria-label="Belfort">
-<line class="lead" x1="464.7" y1="199.7" x2="558" y2="216" stroke="#C9A3B8" stroke-width="1"/>
-<circle class="hit" cx="464.7" cy="199.7" r="15" fill="transparent"/>
-<circle class="halo" cx="464.7" cy="199.7" r="9" fill="#D488B4" opacity="0.35"/>
-<circle class="dot" cx="464.7" cy="199.7" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
-<text class="lbl" x="564" y="220" text-anchor="start" font-size="16" font-weight="600" fill="#26141D">Belfort</text>
-</g>
-<g class="city" data-city="Bordeaux" tabindex="0" role="button" aria-label="Bordeaux">
-<circle class="hit" cx="178.0" cy="356.7" r="15" fill="transparent"/>
-<circle class="halo" cx="178.0" cy="356.7" r="9" fill="#D488B4" opacity="0.35"/>
-<circle class="dot" cx="178.0" cy="356.7" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
-<text class="lbl" x="166" y="360" text-anchor="end" font-size="16" font-weight="600" fill="#26141D">Bordeaux</text>
-</g>
-<g class="city" data-city="Calais" tabindex="0" role="button" aria-label="Calais">
-<circle class="hit" cx="271.8" cy="14.1" r="15" fill="transparent"/>
-<circle class="halo" cx="271.8" cy="14.1" r="9" fill="#D488B4" opacity="0.35"/>
-<circle class="dot" cx="271.8" cy="14.1" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
-<text class="lbl" x="261" y="17" text-anchor="end" font-size="16" font-weight="600" fill="#26141D">Calais</text>
-</g>
-<g class="city" data-city="Colmar" tabindex="0" role="button" aria-label="Colmar">
-<line class="lead" x1="483.7" y1="175.0" x2="558" y2="152" stroke="#C9A3B8" stroke-width="1"/>
-<circle class="hit" cx="483.7" cy="175.0" r="15" fill="transparent"/>
-<circle class="halo" cx="483.7" cy="175.0" r="9" fill="#D488B4" opacity="0.35"/>
-<circle class="dot" cx="483.7" cy="175.0" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
-<text class="lbl" x="564" y="156" text-anchor="start" font-size="16" font-weight="600" fill="#26141D">Colmar</text>
-</g>
-<g class="city" data-city="Grenoble" tabindex="0" role="button" aria-label="Grenoble">
-<circle class="hit" cx="420.8" cy="337.0" r="15" fill="transparent"/>
-<circle class="halo" cx="420.8" cy="337.0" r="9" fill="#D488B4" opacity="0.35"/>
-<circle class="dot" cx="420.8" cy="337.0" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
-<text class="lbl" x="430" y="345" text-anchor="start" font-size="16" font-weight="600" fill="#26141D">Grenoble</text>
-</g>
-<g class="city" data-city="Lille" tabindex="0" role="button" aria-label="Lille">
-<circle class="hit" cx="318.0" cy="32.0" r="15" fill="transparent"/>
-<circle class="halo" cx="318.0" cy="32.0" r="9" fill="#D488B4" opacity="0.35"/>
-<circle class="dot" cx="318.0" cy="32.0" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
-<text class="lbl" x="330" y="35" text-anchor="start" font-size="16" font-weight="600" fill="#26141D">Lille</text>
-</g>
-<g class="city" data-city="Lyon" tabindex="0" role="button" aria-label="Lyon">
-<circle class="hit" cx="386.5" cy="304.7" r="15" fill="transparent"/>
-<circle class="halo" cx="386.5" cy="304.7" r="9" fill="#D488B4" opacity="0.35"/>
-<circle class="dot" cx="386.5" cy="304.7" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
-<text class="lbl" x="374" y="300" text-anchor="end" font-size="16" font-weight="600" fill="#26141D">Lyon</text>
-</g>
-<g class="city" data-city="Mulhouse" tabindex="0" role="button" aria-label="Mulhouse">
-<line class="lead" x1="483.0" y1="193.4" x2="558" y2="184" stroke="#C9A3B8" stroke-width="1"/>
-<circle class="hit" cx="483.0" cy="193.4" r="15" fill="transparent"/>
-<circle class="halo" cx="483.0" cy="193.4" r="9" fill="#D488B4" opacity="0.35"/>
-<circle class="dot" cx="483.0" cy="193.4" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
-<text class="lbl" x="564" y="188" text-anchor="start" font-size="16" font-weight="600" fill="#26141D">Mulhouse</text>
+<g class="city" data-city="Villeneuve d'Ascq" tabindex="0" role="button" aria-label="Villeneuve d'Ascq">
+<title>Villeneuve d'Ascq</title>
+<circle class="hit" cx="321.5" cy="32.7" r="13" fill="transparent"/>
+<circle class="halo" cx="321.5" cy="32.7" r="8" fill="#D488B4" opacity="0.35"/>
+<circle class="dot" cx="321.5" cy="32.7" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
 </g>
 <g class="city" data-city="Orléans" tabindex="0" role="button" aria-label="Orléans">
-<circle class="hit" cx="273.8" cy="184.9" r="15" fill="transparent"/>
-<circle class="halo" cx="273.8" cy="184.9" r="9" fill="#D488B4" opacity="0.35"/>
+<title>Orléans</title>
+<circle class="hit" cx="273.8" cy="184.9" r="13" fill="transparent"/>
+<circle class="halo" cx="273.8" cy="184.9" r="8" fill="#D488B4" opacity="0.35"/>
 <circle class="dot" cx="273.8" cy="184.9" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
-<text class="lbl" x="262" y="188" text-anchor="end" font-size="16" font-weight="600" fill="#26141D">Orléans</text>
 </g>
-<g class="city" data-city="Paris" tabindex="0" role="button" aria-label="Paris">
-<circle class="hit" cx="290.9" cy="131.3" r="15" fill="transparent"/>
-<circle class="halo" cx="290.9" cy="131.3" r="9" fill="#D488B4" opacity="0.35"/>
-<circle class="dot" cx="290.9" cy="131.3" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
-<text class="lbl" x="279" y="132" text-anchor="end" font-size="16" font-weight="600" fill="#26141D">Paris</text>
+<g class="city" data-city="Annecy" tabindex="0" role="button" aria-label="Annecy">
+<title>Annecy</title>
+<circle class="hit" cx="436.4" cy="297.2" r="13" fill="transparent"/>
+<circle class="halo" cx="436.4" cy="297.2" r="8" fill="#D488B4" opacity="0.35"/>
+<circle class="dot" cx="436.4" cy="297.2" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
+</g>
+<g class="city" data-city="Lyon" tabindex="0" role="button" aria-label="Lyon">
+<title>Lyon</title>
+<circle class="hit" cx="386.5" cy="304.7" r="13" fill="transparent"/>
+<circle class="halo" cx="386.5" cy="304.7" r="8" fill="#D488B4" opacity="0.35"/>
+<circle class="dot" cx="386.5" cy="304.7" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
+</g>
+<g class="city" data-city="Dardilly" tabindex="0" role="button" aria-label="Dardilly">
+<title>Dardilly</title>
+<circle class="hit" cx="383.4" cy="302.6" r="13" fill="transparent"/>
+<circle class="halo" cx="383.4" cy="302.6" r="8" fill="#D488B4" opacity="0.35"/>
+<circle class="dot" cx="383.4" cy="302.6" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
 </g>
 <g class="city" data-city="Strasbourg" tabindex="0" role="button" aria-label="Strasbourg">
-<line class="lead" x1="498.9" y1="147.3" x2="558" y2="120" stroke="#C9A3B8" stroke-width="1"/>
-<circle class="hit" cx="498.9" cy="147.3" r="15" fill="transparent"/>
-<circle class="halo" cx="498.9" cy="147.3" r="9" fill="#D488B4" opacity="0.35"/>
+<title>Strasbourg</title>
+<circle class="hit" cx="498.9" cy="147.3" r="13" fill="transparent"/>
+<circle class="halo" cx="498.9" cy="147.3" r="8" fill="#D488B4" opacity="0.35"/>
 <circle class="dot" cx="498.9" cy="147.3" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
-<text class="lbl" x="564" y="124" text-anchor="start" font-size="16" font-weight="600" fill="#26141D">Strasbourg</text>
+</g>
+<g class="city" data-city="Balgau" tabindex="0" role="button" aria-label="Balgau">
+<title>Balgau</title>
+<circle class="hit" cx="490.3" cy="185.7" r="13" fill="transparent"/>
+<circle class="halo" cx="490.3" cy="185.7" r="8" fill="#D488B4" opacity="0.35"/>
+<circle class="dot" cx="490.3" cy="185.7" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
+</g>
+<g class="city" data-city="Belfort" tabindex="0" role="button" aria-label="Belfort">
+<title>Belfort</title>
+<circle class="hit" cx="464.7" cy="199.7" r="13" fill="transparent"/>
+<circle class="halo" cx="464.7" cy="199.7" r="8" fill="#D488B4" opacity="0.35"/>
+<circle class="dot" cx="464.7" cy="199.7" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
+</g>
+<g class="city" data-city="Mulhouse" tabindex="0" role="button" aria-label="Mulhouse">
+<title>Mulhouse</title>
+<circle class="hit" cx="483.0" cy="193.4" r="13" fill="transparent"/>
+<circle class="halo" cx="483.0" cy="193.4" r="8" fill="#D488B4" opacity="0.35"/>
+<circle class="dot" cx="483.0" cy="193.4" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
+</g>
+<g class="city" data-city="Meylan" tabindex="0" role="button" aria-label="Meylan">
+<title>Meylan</title>
+<circle class="hit" cx="422.9" cy="335.7" r="13" fill="transparent"/>
+<circle class="halo" cx="422.9" cy="335.7" r="8" fill="#D488B4" opacity="0.35"/>
+<circle class="dot" cx="422.9" cy="335.7" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
+</g>
+<g class="city" data-city="Paris" tabindex="0" role="button" aria-label="Paris">
+<title>Paris</title>
+<circle class="hit" cx="290.9" cy="131.3" r="13" fill="transparent"/>
+<circle class="halo" cx="290.9" cy="131.3" r="8" fill="#D488B4" opacity="0.35"/>
+<circle class="dot" cx="290.9" cy="131.3" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
+</g>
+<g class="city" data-city="Vienne" tabindex="0" role="button" aria-label="Vienne">
+<title>Vienne</title>
+<circle class="hit" cx="388.0" cy="318.1" r="13" fill="transparent"/>
+<circle class="halo" cx="388.0" cy="318.1" r="8" fill="#D488B4" opacity="0.35"/>
+<circle class="dot" cx="388.0" cy="318.1" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
+</g>
+<g class="city" data-city="Aix-les-Bains" tabindex="0" role="button" aria-label="Aix-les-Bains">
+<title>Aix-les-Bains</title>
+<circle class="hit" cx="428.1" cy="309.0" r="13" fill="transparent"/>
+<circle class="halo" cx="428.1" cy="309.0" r="8" fill="#D488B4" opacity="0.35"/>
+<circle class="dot" cx="428.1" cy="309.0" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
+</g>
+<g class="city" data-city="Chambéry" tabindex="0" role="button" aria-label="Chambéry">
+<title>Chambéry</title>
+<circle class="hit" cx="428.2" cy="315.8" r="13" fill="transparent"/>
+<circle class="halo" cx="428.2" cy="315.8" r="8" fill="#D488B4" opacity="0.35"/>
+<circle class="dot" cx="428.2" cy="315.8" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
+</g>
+<g class="city" data-city="Versailles" tabindex="0" role="button" aria-label="Versailles">
+<title>Versailles</title>
+<circle class="hit" cx="282.3" cy="134.5" r="13" fill="transparent"/>
+<circle class="halo" cx="282.3" cy="134.5" r="8" fill="#D488B4" opacity="0.35"/>
+<circle class="dot" cx="282.3" cy="134.5" r="4.5" fill="#721446" stroke="#fff" stroke-width="1.5"/>
 </g>
 </svg></div>
       <aside class="city-panel">
@@ -431,7 +451,7 @@
         </div>
       </aside>
     </div>
-    <div class="city-chips" id="cityChips"><span class="chip ville" data-city="Annecy" tabindex="0" role="button">Annecy</span><span class="chip ville" data-city="Belfort" tabindex="0" role="button">Belfort</span><span class="chip ville" data-city="Bordeaux" tabindex="0" role="button">Bordeaux</span><span class="chip ville" data-city="Calais" tabindex="0" role="button">Calais</span><span class="chip ville" data-city="Colmar" tabindex="0" role="button">Colmar</span><span class="chip ville" data-city="Grenoble" tabindex="0" role="button">Grenoble</span><span class="chip ville" data-city="Lille" tabindex="0" role="button">Lille</span><span class="chip ville" data-city="Lyon" tabindex="0" role="button">Lyon</span><span class="chip ville" data-city="Mulhouse" tabindex="0" role="button">Mulhouse</span><span class="chip ville" data-city="Orléans" tabindex="0" role="button">Orléans</span><span class="chip ville" data-city="Paris" tabindex="0" role="button">Paris</span><span class="chip ville" data-city="Strasbourg" tabindex="0" role="button">Strasbourg</span></div>
+    <div class="city-chips" id="cityChips"><span class="chip ville" data-city="Aix-les-Bains" tabindex="0" role="button">Aix-les-Bains</span><span class="chip ville" data-city="Annecy" tabindex="0" role="button">Annecy</span><span class="chip ville" data-city="Balgau" tabindex="0" role="button">Balgau</span><span class="chip ville" data-city="Belfort" tabindex="0" role="button">Belfort</span><span class="chip ville" data-city="Chambéry" tabindex="0" role="button">Chambéry</span><span class="chip ville" data-city="Dardilly" tabindex="0" role="button">Dardilly</span><span class="chip ville" data-city="Lyon" tabindex="0" role="button">Lyon</span><span class="chip ville" data-city="Meylan" tabindex="0" role="button">Meylan</span><span class="chip ville" data-city="Mulhouse" tabindex="0" role="button">Mulhouse</span><span class="chip ville" data-city="Orléans" tabindex="0" role="button">Orléans</span><span class="chip ville" data-city="Paris" tabindex="0" role="button">Paris</span><span class="chip ville" data-city="Strasbourg" tabindex="0" role="button">Strasbourg</span><span class="chip ville" data-city="Versailles" tabindex="0" role="button">Versailles</span><span class="chip ville" data-city="Vienne" tabindex="0" role="button">Vienne</span><span class="chip ville" data-city="Villeneuve d'Ascq" tabindex="0" role="button">Villeneuve d'Ascq</span></div>
   </div>
 </section>
 
@@ -490,13 +510,13 @@
       <div><h4>Formations</h4><a href="#formations">Langues étrangères</a><a href="#formations">Communication pro</a><a href="#formations">Coaching</a><a href="#formations">Certifications & CPF</a></div>
       <div><h4>Contact</h4><a href="#" class="ph">[adresse]</a><a href="#" class="ph">[téléphone]</a><a href="#" class="ph">[email]</a></div>
     </div>
-    <div class="quali"><div class="quali-logo"><img src="qualiopi-logo.png" alt="Qualiopi – processus certifié – République Française" onload="this.style.display='block';this.nextElementSibling.style.display='none'"><div class="quali-ph">Logo officiel Qualiopi<small>déposer « qualiopi-logo.png »</small></div></div><p class="quali-mention">La certification qualité a été délivrée au titre de la catégorie d'action suivante : <strong>actions de formation</strong>.</p></div>
+    <div class="quali"><div class="quali-logo"><img src="qualiopi-logo.png" alt="Qualiopi – processus certifié – République Française" onload="this.style.display='block';this.nextElementSibling.style.display='none'"><div class="quali-ph">Logo officiel Qualiopi<small>déposer « qualiopi-logo.png »</small></div></div><div class="quali-txt"><p class="quali-mention">La certification qualité a été délivrée au titre de la catégorie d'action suivante : <strong>actions de formation</strong>.</p><a class="quali-dl" href="qualiopi-certificat.pdf" target="_blank" rel="noopener"><span>↓ Télécharger notre certificat Qualiopi (PDF)</span></a><a class="quali-dl" href="accessibilite-handicap.pdf" target="_blank" rel="noopener"><span>♿ Formation &amp; accessibilité des apprenants en situation de handicap (PDF)</span></a></div></div>
     <div class="foot-bot">© 2026 mediaformation.fr — Tous droits réservés · Mentions légales · RGPD</div>
   </div>
 </footer>
 
 <script>
-const CITY = {"Annecy": {"addr": "[adresse — à compléter]", "tel": "[téléphone]", "mail": "[email]"}, "Belfort": {"addr": "[adresse — à compléter]", "tel": "[téléphone]", "mail": "[email]"}, "Bordeaux": {"addr": "[adresse — à compléter]", "tel": "[téléphone]", "mail": "[email]"}, "Calais": {"addr": "[adresse — à compléter]", "tel": "[téléphone]", "mail": "[email]"}, "Colmar": {"addr": "[adresse — à compléter]", "tel": "[téléphone]", "mail": "[email]"}, "Grenoble": {"addr": "[adresse — à compléter]", "tel": "[téléphone]", "mail": "[email]"}, "Lille": {"addr": "[adresse — à compléter]", "tel": "[téléphone]", "mail": "[email]"}, "Lyon": {"addr": "[adresse — à compléter]", "tel": "[téléphone]", "mail": "[email]"}, "Mulhouse": {"addr": "[adresse — à compléter]", "tel": "[téléphone]", "mail": "[email]"}, "Orléans": {"addr": "[adresse — à compléter]", "tel": "[téléphone]", "mail": "[email]"}, "Paris": {"addr": "[adresse — à compléter]", "tel": "[téléphone]", "mail": "[email]"}, "Strasbourg": {"addr": "[adresse — à compléter]", "tel": "[téléphone]", "mail": "[email]"}};
+const CITY = {"Villeneuve d'Ascq": {"addr": "61 Avenue de Canteleu, 59650 Villeneuve d'Ascq", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Orléans": {"addr": "15 rue de la Bourie Blanche, 45000 Orléans", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Annecy": {"addr": "2 rue du Pré Paillard, 74940 Annecy", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Lyon": {"addr": "38 rue de l'Université, 69007 Lyon", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Dardilly": {"addr": "5C chemin du Jubin, 69570 Dardilly", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Strasbourg": {"addr": "76 rue de la Plaine des Bouchers, 67100 Strasbourg", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Balgau": {"addr": "5 rue de Nambsheim, 68740 Balgau", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Belfort": {"addr": "Techn'hom – 8 rue de Broglie, 90000 Belfort", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Mulhouse": {"addr": "Parc des Collines – Immeuble le Trident, 68200 Mulhouse", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Meylan": {"addr": "25 Avenue du Granier, 38240 Meylan", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Paris": {"addr": "15 rue du Quatre-Septembre, 75002 Paris", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Vienne": {"addr": "30 Avenue du Général Leclerc, 38200 Vienne", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Aix-les-Bains": {"addr": "603 boulevard du Président Wilson, 73100 Aix-les-Bains", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Chambéry": {"addr": "79 place de la Gare, 73000 Chambéry", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Versailles": {"addr": "13 rue Sainte-Adélaïde, 78000 Versailles", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}};
 (function(){
   const detail=document.getElementById('cityDetail'), hint=document.getElementById('cityHint');
   function sel(name){
