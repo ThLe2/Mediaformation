@@ -170,6 +170,18 @@
   a.card{display:block}
   .hero .trust a.tqual{color:#fff;border-bottom:1px dashed rgba(255,255,255,.55)}
   .hero .trust a.tqual:hover{border-color:#fff}
+  .etc-endorse{display:flex;align-items:center;gap:12px;margin-bottom:16px;color:rgba(255,255,255,.85);font-size:.88rem;font-weight:600}
+  .etc-badge{background:#fff;border-radius:8px;padding:6px 11px;display:inline-flex;align-items:center}
+  .etc-badge img{height:32px;display:block}
+  .consent{display:flex;gap:9px;align-items:flex-start;font-size:.82rem;font-weight:600;color:var(--ink);margin:2px 0 16px;line-height:1.4}
+  .consent input{width:auto;margin:3px 0 0;flex-shrink:0}
+  .consent a{color:var(--prune);font-weight:700}
+  .rgpd{font-size:.72rem;color:var(--grey);line-height:1.5;margin-top:4px}
+  .rgpd a{color:var(--prune);font-weight:600}
+  #callback .cb label{display:block;color:#fff;font-size:.82rem;font-weight:700;margin:0 0 6px}
+  #callback .cb input[type=text],#callback .cb input[type=tel]{width:100%;border:none;border-radius:8px;padding:12px 14px;font-family:inherit;font-size:.95rem;margin-bottom:14px;background:#fff}
+  #callback .cb .consent{color:#fff}
+  #callback .cb .consent a{color:#fff}
   .quali{display:flex;align-items:flex-start;gap:22px;flex-wrap:wrap;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.12);margin-bottom:6px}
   .quali-logo{background:#fff;border-radius:8px;padding:14px 18px;min-width:160px;min-height:78px;display:grid;place-items:center}
   .quali-logo img{max-height:70px;display:none}
@@ -250,9 +262,12 @@
           <span><b>Présentiel</b> & distanciel</span><a class="tqual" href="qualiopi-certificat.pdf" target="_blank" rel="noopener"><b>Certifié</b> Qualiopi ↓</a>
         </div>
       </div>
-      <div class="lang-card">
-        <h3>Langues proposées</h3>
-        <div class="lang-list"><a class="lang" href="formation.html?langue=anglais"><span class="flag"><svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#012169"/><path d="M0,0 60,40 M60,0 0,40" stroke="#fff" stroke-width="9"/><path d="M0,0 60,40 M60,0 0,40" stroke="#C8102E" stroke-width="4"/><rect x="25" width="10" height="40" fill="#fff"/><rect y="15" width="60" height="10" fill="#fff"/><rect x="27" width="6" height="40" fill="#C8102E"/><rect y="17" width="60" height="6" fill="#C8102E"/></svg></span>Anglais</a><a class="lang" href="formation.html?langue=allemand"><span class="flag"><svg viewBox="0 0 5 3"><rect width="5" height="1" fill="#000"/><rect width="5" height="1" y="1" fill="#D00"/><rect width="5" height="1" y="2" fill="#FFCE00"/></svg></span>Allemand</a><a class="lang" href="formation.html?langue=espagnol"><span class="flag"><svg viewBox="0 0 3 2"><rect width="3" height="2" fill="#AA151B"/><rect y="0.5" width="3" height="1" fill="#F1BF00"/></svg></span>Espagnol</a><a class="lang" href="formation.html?langue=francais"><span class="flag"><svg viewBox="0 0 3 2"><rect width="3" height="2" fill="#fff"/><rect width="1" height="2" fill="#0055A4"/><rect x="2" width="1" height="2" fill="#EF4135"/></svg></span>Français</a><a class="lang" href="formation.html?langue=italien"><span class="flag"><svg viewBox="0 0 3 2"><rect width="3" height="2" fill="#fff"/><rect width="1" height="2" fill="#009246"/><rect x="2" width="1" height="2" fill="#CE2B37"/></svg></span>Italien</a><a class="lang" href="formation.html?langue=portugais"><span class="flag"><svg viewBox="0 0 3 2"><rect width="3" height="2" fill="#DA291C"/><rect width="1.2" height="2" fill="#046A38"/><circle cx="1.2" cy="1" r="0.3" fill="#FFE000"/></svg></span>Portugais</a><a class="lang" href="formation.html?langue=russe"><span class="flag"><svg viewBox="0 0 3 2"><rect width="3" height="2" fill="#fff"/><rect y="0.667" width="3" height="0.667" fill="#0039A6"/><rect y="1.333" width="3" height="0.667" fill="#D52B1E"/></svg></span>Russe</a><a class="lang" href="formation.html?langue=chinois"><span class="flag"><svg viewBox="0 0 30 20"><rect width="30" height="20" fill="#DE2910"/><polygon points="6.00,1.80 6.72,4.01 9.04,4.01 7.16,5.38 7.88,7.59 6.00,6.22 4.12,7.59 4.84,5.38 2.96,4.01 5.28,4.01" fill="#FFDE00"/><polygon points="11.00,1.40 11.25,2.16 12.05,2.16 11.40,2.63 11.65,3.39 11.00,2.92 10.35,3.39 10.60,2.63 9.95,2.16 10.75,2.16" fill="#FFDE00"/><polygon points="13.00,3.70 13.25,4.46 14.05,4.46 13.40,4.93 13.65,5.69 13.00,5.22 12.35,5.69 12.60,4.93 11.95,4.46 12.75,4.46" fill="#FFDE00"/><polygon points="13.00,6.70 13.25,7.46 14.05,7.46 13.40,7.93 13.65,8.69 13.00,8.22 12.35,8.69 12.60,7.93 11.95,7.46 12.75,7.46" fill="#FFDE00"/><polygon points="11.00,8.90 11.25,9.66 12.05,9.66 11.40,10.13 11.65,10.89 11.00,10.42 10.35,10.89 10.60,10.13 9.95,9.66 10.75,9.66" fill="#FFDE00"/></svg></span>Chinois</a></div>
+      <div>
+        <div class="etc-endorse"><span>mediaformation, une société de</span><a class="etc-badge" href="https://www.groupe-etc.com" target="_blank" rel="noopener"><img src="logo-etc.png" alt="ETC Group"></a></div>
+        <div class="lang-card">
+          <h3>Langues proposées</h3>
+          <div class="lang-list"><a class="lang" href="formation.html?langue=anglais"><span class="flag"><svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#012169"/><path d="M0,0 60,40 M60,0 0,40" stroke="#fff" stroke-width="9"/><path d="M0,0 60,40 M60,0 0,40" stroke="#C8102E" stroke-width="4"/><rect x="25" width="10" height="40" fill="#fff"/><rect y="15" width="60" height="10" fill="#fff"/><rect x="27" width="6" height="40" fill="#C8102E"/><rect y="17" width="60" height="6" fill="#C8102E"/></svg></span>Anglais</a><a class="lang" href="formation.html?langue=allemand"><span class="flag"><svg viewBox="0 0 5 3"><rect width="5" height="1" fill="#000"/><rect width="5" height="1" y="1" fill="#D00"/><rect width="5" height="1" y="2" fill="#FFCE00"/></svg></span>Allemand</a><a class="lang" href="formation.html?langue=espagnol"><span class="flag"><svg viewBox="0 0 3 2"><rect width="3" height="2" fill="#AA151B"/><rect y="0.5" width="3" height="1" fill="#F1BF00"/></svg></span>Espagnol</a><a class="lang" href="formation.html?langue=francais"><span class="flag"><svg viewBox="0 0 3 2"><rect width="3" height="2" fill="#fff"/><rect width="1" height="2" fill="#0055A4"/><rect x="2" width="1" height="2" fill="#EF4135"/></svg></span>Français</a><a class="lang" href="formation.html?langue=italien"><span class="flag"><svg viewBox="0 0 3 2"><rect width="3" height="2" fill="#fff"/><rect width="1" height="2" fill="#009246"/><rect x="2" width="1" height="2" fill="#CE2B37"/></svg></span>Italien</a><a class="lang" href="formation.html?langue=portugais"><span class="flag"><svg viewBox="0 0 3 2"><rect width="3" height="2" fill="#DA291C"/><rect width="1.2" height="2" fill="#046A38"/><circle cx="1.2" cy="1" r="0.3" fill="#FFE000"/></svg></span>Portugais</a><a class="lang" href="formation.html?langue=russe"><span class="flag"><svg viewBox="0 0 3 2"><rect width="3" height="2" fill="#fff"/><rect y="0.667" width="3" height="0.667" fill="#0039A6"/><rect y="1.333" width="3" height="0.667" fill="#D52B1E"/></svg></span>Russe</a><a class="lang" href="formation.html?langue=chinois"><span class="flag"><svg viewBox="0 0 30 20"><rect width="30" height="20" fill="#DE2910"/><polygon points="6.00,1.80 6.72,4.01 9.04,4.01 7.16,5.38 7.88,7.59 6.00,6.22 4.12,7.59 4.84,5.38 2.96,4.01 5.28,4.01" fill="#FFDE00"/><polygon points="11.00,1.40 11.25,2.16 12.05,2.16 11.40,2.63 11.65,3.39 11.00,2.92 10.35,3.39 10.60,2.63 9.95,2.16 10.75,2.16" fill="#FFDE00"/><polygon points="13.00,3.70 13.25,4.46 14.05,4.46 13.40,4.93 13.65,5.69 13.00,5.22 12.35,5.69 12.60,4.93 11.95,4.46 12.75,4.46" fill="#FFDE00"/><polygon points="13.00,6.70 13.25,7.46 14.05,7.46 13.40,7.93 13.65,8.69 13.00,8.22 12.35,8.69 12.60,7.93 11.95,7.46 12.75,7.46" fill="#FFDE00"/><polygon points="11.00,8.90 11.25,9.66 12.05,9.66 11.40,10.13 11.65,10.89 11.00,10.42 10.35,10.89 10.60,10.13 9.95,9.66 10.75,9.66" fill="#FFDE00"/></svg></span>Chinois</a></div>
+        </div>
       </div>
     </div>
   </div>
@@ -473,7 +488,17 @@
       <p>Recevez un devis gratuit et personnalisé sous 48h, adapté à vos objectifs et à votre budget.</p>
       <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
         <a href="#contact" class="btn" style="background:#fff;color:var(--prune)">Obtenir un devis gratuit</a>
-        <a href="#contact" class="btn ghost">Être rappelé</a>
+        <button type="button" class="btn ghost" onclick="var c=document.getElementById('callback');c.style.display='block';this.style.display='none';">Être rappelé</button>
+      </div>
+      <div id="callback" style="display:none;max-width:470px;margin:26px auto 0;text-align:left">
+        <form class="cb" action="https://formsubmit.co/eric.castelain@groupe-etc.com" method="POST">
+          <input type="hidden" name="_subject" value="Demande de rappel — mediaformation.fr">
+          <input type="hidden" name="_captcha" value="false">
+          <label>Votre nom</label><input name="Nom" type="text" placeholder="Votre nom" required>
+          <label>Numéro à rappeler</label><input name="Téléphone" type="tel" placeholder="06 12 34 56 78" required>
+          <label class="consent"><input type="checkbox" name="Consentement RGPD" value="Oui" required> J'accepte que mes données soient utilisées pour me recontacter (voir la <a href="confidentialite.html">politique de confidentialité</a>).</label>
+          <button class="btn" type="submit" style="background:#fff;color:var(--prune)">Être rappelé</button>
+        </form>
       </div>
     </div>
   </div>
@@ -485,16 +510,22 @@
       <p class="eyebrow" style="color:var(--rose)">Contact</p>
       <h2>Parlons de votre projet</h2>
       <p class="lead">Une question, un besoin de formation ? Écrivez-nous, nous revenons vers vous rapidement.</p>
-      <div class="info-row"><span class="k">Adresse</span><span class="ph">[adresse du siège]</span></div>
-      <div class="info-row"><span class="k">Téléphone</span><span class="ph">[téléphone]</span></div>
-      <div class="info-row"><span class="k">E-mail</span><span class="ph">[email de réception]</span></div>
+      <div class="info-row"><span class="k">Siège</span><span>61 Avenue de Canteleu, 59650 Villeneuve d'Ascq</span></div>
+      <div class="info-row"><span class="k">Téléphone</span><span>03 20 47 09 19</span></div>
+      <div class="info-row"><span class="k">E-mail</span><span>eric.castelain@groupe-etc.com</span></div>
+      <div class="info-row"><span class="k">Nos sites</span><span>15 implantations — voir la <a href="#ou" style="color:var(--prune);font-weight:700">carte</a></span></div>
     </div>
     <div>
-      <form onsubmit="return false">
-        <label for="n">Nom</label><input id="n" type="text" placeholder="Votre nom">
-        <label for="e">E-mail</label><input id="e" type="email" placeholder="vous@exemple.fr">
-        <label for="m">Message</label><textarea id="m" placeholder="Décrivez votre besoin…"></textarea>
+      <form action="https://formsubmit.co/eric.castelain@groupe-etc.com" method="POST">
+        <input type="hidden" name="_subject" value="Nouvelle demande — mediaformation.fr">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <label for="n">Nom</label><input id="n" name="Nom" type="text" placeholder="Votre nom" required>
+        <label for="e">E-mail</label><input id="e" name="Email" type="email" placeholder="vous@exemple.fr" required>
+        <label for="m">Message</label><textarea id="m" name="Message" placeholder="Décrivez votre besoin…" required></textarea>
+        <label class="consent"><input type="checkbox" name="Consentement RGPD" value="Oui" required> J'accepte que mes données soient utilisées pour traiter ma demande (voir la <a href="confidentialite.html">politique de confidentialité</a>).</label>
         <button class="btn" type="submit">Envoyer</button>
+        <p class="rgpd">Mediaformation collecte des données à caractère personnel aux fins de traiter votre demande. Conformément à la règlementation, vous disposez d'un droit d'accès, de rectification, de portabilité, d'effacement, de limitation du traitement et d'opposition au traitement. Ces droits peuvent être exercés à l'adresse rgpd@groupe-etc.com. La politique de confidentialité est consultable <a href="confidentialite.html">ici</a>.</p>
       </form>
     </div>
   </div>
@@ -516,7 +547,7 @@
 </footer>
 
 <script>
-const CITY = {"Villeneuve d'Ascq": {"addr": "61 Avenue de Canteleu, 59650 Villeneuve d'Ascq", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Orléans": {"addr": "15 rue de la Bourie Blanche, 45000 Orléans", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Annecy": {"addr": "2 rue du Pré Paillard, 74940 Annecy", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Lyon": {"addr": "38 rue de l'Université, 69007 Lyon", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Dardilly": {"addr": "5C chemin du Jubin, 69570 Dardilly", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Strasbourg": {"addr": "76 rue de la Plaine des Bouchers, 67100 Strasbourg", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Balgau": {"addr": "5 rue de Nambsheim, 68740 Balgau", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Belfort": {"addr": "Techn'hom – 8 rue de Broglie, 90000 Belfort", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Mulhouse": {"addr": "Parc des Collines – Immeuble le Trident, 68200 Mulhouse", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Meylan": {"addr": "25 Avenue du Granier, 38240 Meylan", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Paris": {"addr": "15 rue du Quatre-Septembre, 75002 Paris", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Vienne": {"addr": "30 Avenue du Général Leclerc, 38200 Vienne", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Aix-les-Bains": {"addr": "603 boulevard du Président Wilson, 73100 Aix-les-Bains", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Chambéry": {"addr": "79 place de la Gare, 73000 Chambéry", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}, "Versailles": {"addr": "13 rue Sainte-Adélaïde, 78000 Versailles", "tel": "[téléphone — à compléter]", "mail": "[email — à compléter]"}};
+const CITY = {"Aix-les-Bains": {"addr": "603 boulevard du Président Wilson, 73100 Aix-les-Bains", "tel": "04 76 59 19 94", "mail": "fanny.michel@groupe-etc.com"}, "Annecy": {"addr": "2 rue du Pré Paillard, 74940 Annecy", "tel": "04 50 64 03 68", "mail": "lina.ricottone@groupe-etc.com"}, "Balgau": {"addr": "5 rue de Nambsheim, 68740 Balgau", "tel": "03 88 39 66 67", "mail": "ioana.musca@groupe-etc.com"}, "Belfort": {"addr": "Techn'hom – 8 rue de Broglie, 90000 Belfort", "tel": "03 89 34 23 83", "mail": "celine.gallagher@groupe-etc.com"}, "Chambéry": {"addr": "79 place de la Gare, 73000 Chambéry", "tel": "04 76 59 19 94", "mail": "fanny.michel@groupe-etc.com"}, "Dardilly": {"addr": "5C chemin du Jubin, 69570 Dardilly", "tel": "04 72 84 77 40", "mail": "zorah.bamakdji@groupe-etc.com"}, "Lyon": {"addr": "38 rue de l'Université, 69007 Lyon", "tel": "04 72 84 77 40", "mail": "zorah.bamakdji@groupe-etc.com"}, "Meylan": {"addr": "25 Avenue du Granier, 38240 Meylan", "tel": "04 76 59 19 94", "mail": "fanny.michel@groupe-etc.com"}, "Mulhouse": {"addr": "Parc des Collines – Immeuble le Trident, 68200 Mulhouse", "tel": "03 89 34 23 83", "mail": "celine.gallagher@groupe-etc.com"}, "Orléans": {"addr": "15 rue de la Bourie Blanche, 45000 Orléans", "tel": "02 38 62 66 76", "mail": "christine.gentilhomme@groupe-etc.com"}, "Paris": {"addr": "15 rue du Quatre-Septembre, 75002 Paris", "tel": "02 38 62 66 76", "mail": "christine.gentilhomme@groupe-etc.com"}, "Strasbourg": {"addr": "76 rue de la Plaine des Bouchers, 67100 Strasbourg", "tel": "03 88 39 66 67", "mail": "ioana.musca@groupe-etc.com"}, "Versailles": {"addr": "13 rue Sainte-Adélaïde, 78000 Versailles", "tel": "02 38 62 66 76", "mail": "christine.gentilhomme@groupe-etc.com"}, "Vienne": {"addr": "30 Avenue du Général Leclerc, 38200 Vienne", "tel": "04 74 20 54 42", "mail": "zorah.bamakdji@groupe-etc.com"}, "Villeneuve d'Ascq": {"addr": "61 Avenue de Canteleu, 59650 Villeneuve d'Ascq", "tel": "03 20 47 09 19", "mail": "caroline.renner@groupe-etc.com"}};
 (function(){
   const detail=document.getElementById('cityDetail'), hint=document.getElementById('cityHint');
   function sel(name){
